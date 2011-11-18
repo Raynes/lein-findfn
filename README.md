@@ -19,6 +19,16 @@ P.S.: This isn't necessarily guarenteed to work properly. ;)
 ## Usage
 
     lein plugin install lein-findfn 0.1.0
+    lein findfn 2 3 5
+    lein findarg map % [1 2 3] [2 3 4]
+
+Keep in mind that you have to respect how your shell parses arguments. For example, this works:
+
+    lein findarg map % [\\a \\b \\c] [\"a\" \"b\" \"c\"]
+
+but this doesn't:
+
+    lein findarg map % [\a \b \c] ["a" "b" "c"]
 
 ## License
 

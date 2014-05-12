@@ -1,5 +1,6 @@
-(defproject lein-findfn "0.1.0"
+(defproject lein-findfn "0.1.1-SNAPSHOT"
   :description "Find things."
-  :dependencies [[clojure "1.2.1"]
-                 [findfn "0.1.1"]]
+  :dependencies [[org.clojure/clojure "1.6.0"]
+                 [findfn "0.1.3"]]
+  :jvm-opts ["-Djava.security.policy=example.policy"]
   :eval-in-leiningen true)

@@ -18,7 +18,14 @@ P.S.: This isn't necessarily guarenteed to work properly. ;)
 
 ## Usage
 
-    lein plugin install lein-findfn 0.1.0
+    git clone https://github.com/timgaleckas/lein-findfn.git
+    cd lein-findfn
+    LEIN_JVM_OPTS="-Djava.security.policy=$(pwd)/example.policy" lein findfn 2 3 5
+
+Notice the required security policy. You can also choose to copy the
+example policy to ~/.java.policy This is because findfn uses
+https://github.com/Raynes/clojail
+    
     lein findfn 2 3 5
     lein findarg map % [1 2 3] [2 3 4]
 

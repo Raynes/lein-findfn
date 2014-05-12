@@ -2,7 +2,7 @@
   (:use [clojure.string :only [join]]
         findfn.core))
 
-(defn ^:no-project-needed :findarg
+(defn ^:no-project-needed findarg
   "Find a function to pass to a higher order function to get a specific output value.
 
 Example: lein find-arg map % [1 2 3] [2 3 4]"

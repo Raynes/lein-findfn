@@ -18,7 +18,7 @@ P.S.: This isn't necessarily guarenteed to work properly. ;)
 
 ## Usage
 
-    git clone https://github.com/timgaleckas/lein-findfn.git
+    git clone https://github.com/Raynes/lein-findfn.git
     cd lein-findfn
     LEIN_JVM_OPTS="-Djava.security.policy=$(pwd)/example.policy" lein findfn 2 3 5
 
